@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA24BE81CBCE7330090707B /* HNPlaceholderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA24BE71CBCE7330090707B /* HNPlaceholderLabel.m */; };
 		1BE770E51CBBEE7B0071D57B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE770E41CBBEE7B0071D57B /* main.m */; };
 		1BE770E81CBBEE7B0071D57B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE770E71CBBEE7B0071D57B /* AppDelegate.m */; };
 		1BE770EB1CBBEE7B0071D57B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE770EA1CBBEE7B0071D57B /* ViewController.m */; };
 		1BE770EE1CBBEE7B0071D57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE770EC1CBBEE7B0071D57B /* Main.storyboard */; };
 		1BE770F01CBBEE7B0071D57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE770EF1CBBEE7B0071D57B /* Assets.xcassets */; };
 		1BE770F31CBBEE7B0071D57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE770F11CBBEE7B0071D57B /* LaunchScreen.storyboard */; };
+		1BE770FD1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE770FC1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BA24BE61CBCE7330090707B /* HNPlaceholderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNPlaceholderLabel.h; sourceTree = "<group>"; };
+		1BA24BE71CBCE7330090707B /* HNPlaceholderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNPlaceholderLabel.m; sourceTree = "<group>"; };
 		1BE770E01CBBEE7B0071D57B /* HNBouncyPlaceholderTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNBouncyPlaceholderTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE770E41CBBEE7B0071D57B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BE770E61CBBEE7B0071D57B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		1BE770EF1CBBEE7B0071D57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BE770F21CBBEE7B0071D57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BE770F41CBBEE7B0071D57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE770FB1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNBouncyPlaceholderTextField.h; sourceTree = "<group>"; };
+		1BE770FC1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNBouncyPlaceholderTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		1BE770E21CBBEE7B0071D57B /* HNBouncyPlaceholderTextField */ = {
 			isa = PBXGroup;
 			children = (
+				1BE770FA1CBBEEA80071D57B /* HNBouncyPlaceholderTextFieldLib */,
 				1BE770E61CBBEE7B0071D57B /* AppDelegate.h */,
 				1BE770E71CBBEE7B0071D57B /* AppDelegate.m */,
 				1BE770E91CBBEE7B0071D57B /* ViewController.h */,
@@ -77,6 +84,17 @@
 				1BE770E41CBBEE7B0071D57B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BE770FA1CBBEEA80071D57B /* HNBouncyPlaceholderTextFieldLib */ = {
+			isa = PBXGroup;
+			children = (
+				1BE770FB1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.h */,
+				1BE770FC1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.m */,
+				1BA24BE61CBCE7330090707B /* HNPlaceholderLabel.h */,
+				1BA24BE71CBCE7330090707B /* HNPlaceholderLabel.m */,
+			);
+			path = HNBouncyPlaceholderTextFieldLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +123,7 @@
 		1BE770D81CBBEE7B0071D57B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HN;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Zakariyya;
 				TargetAttributes = {
@@ -152,6 +171,8 @@
 				1BE770EB1CBBEE7B0071D57B /* ViewController.m in Sources */,
 				1BE770E81CBBEE7B0071D57B /* AppDelegate.m in Sources */,
 				1BE770E51CBBEE7B0071D57B /* main.m in Sources */,
+				1BA24BE81CBCE7330090707B /* HNPlaceholderLabel.m in Sources */,
+				1BE770FD1CBBEECC0071D57B /* HNBouncyPlaceholderTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +323,7 @@
 				1BE770F91CBBEE7B0071D57B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

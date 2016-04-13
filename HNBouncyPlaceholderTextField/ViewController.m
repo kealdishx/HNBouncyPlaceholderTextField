@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "HNBouncyPlaceholderTextField.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet HNBouncyPlaceholderTextField *nameTextField;
+@property (weak, nonatomic) IBOutlet HNBouncyPlaceholderTextField *ageTextField;
+@property (weak, nonatomic) IBOutlet HNBouncyPlaceholderTextField *addressTextField;
 
 @end
 
@@ -16,12 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.ageTextField.rightPlaceholder = @"岁";
+    self.addressTextField.rightPlaceholder = @"省";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
 }
 
 @end
