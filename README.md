@@ -1,7 +1,7 @@
 # HNBouncyPlaceholderTextField
 UITextField占位符动画
 #### 用法：
-1.导入HNBouncyPlaceholderTextField.h<br>
+1.导入`#HNBouncyPlaceholderTextField.h`<br>
 2.实例化对象
 ```objective-c
 HNBouncyPlaceholderTextField *bouncyTextField = [[HNBouncyPlaceholderTextField alloc] initWithFrame:<#CGRect#>];
